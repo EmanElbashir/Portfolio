@@ -1,16 +1,14 @@
-
 // اضافة درك مود 
 let moon = document.querySelector(".fa-moon");
 
-moon.onclick = function () {
+moon.onclick = function() {
 
     document.body.classList.toggle("dark-mood");
 
     if (document.body.classList.contains("dark-mood")) {
         moon.className = "fa-solid fa-sun";
         localStorage.setItem("them", "dark");
-    }
-    else {
+    } else {
         moon.className = "fa-regular fa-moon";
         localStorage.setItem("them", "light");
     }
@@ -23,8 +21,7 @@ if (localStorage.getItem("them") === "dark") {
     document.body.classList.add("dark-mood");
     moon.className = "fa-solid fa-sun";
 
-}
-else {
+} else {
     document.body.classList.remove("dark-mood");
     moon.className = "fa-regular fa-moon";
 }
@@ -47,7 +44,7 @@ let whatsapp = document.querySelector("#whatsapp");
 
 
 
-arrow.onclick = function () {
+arrow.onclick = function() {
     scroll({
         top: 0,
         left: 0,
@@ -56,7 +53,7 @@ arrow.onclick = function () {
 }
 
 
-window.onscroll = function () {
+window.onscroll = function() {
     if (scrollY >= 300) {
         arrow.style.opacity = "1";
         whatsapp.style.opacity = "1";
@@ -66,4 +63,11 @@ window.onscroll = function () {
 
 }
 
+//From:
 
+
+sendform.addEventListener('submit', (eo) => {
+    eo.preventDefault()();
+
+
+})

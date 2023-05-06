@@ -600,7 +600,7 @@ textarea {
     resize: none;
 }
 
-button[type="submit"] {
+button {
     padding: 13px 50px;
     border-radius: 10px;
     display: block;
