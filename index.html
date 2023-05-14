@@ -6,6 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="Portfolio.css">
+
   <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -190,11 +191,13 @@
   <div class="CONTACT" id="CONTACT">
     <h3>Contact</h3>
     <div class="container">
-      <form  id="sendform" action="mailto:emanelbedshier@gmail.com" method="post">
-        <input type="email" name="emaile" placeholder="Email" required>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <textarea placeholder="Write Message" name="message"></textarea>
-        <button>send</button>
+      <form  id="sendform">
+        <div class="alert"> Your messaage sent</div>
+        <input id="email"   type="email" name="emaile" placeholder="Your Email....." required>
+        <input id="name" type="text" name="name" placeholder="Your Name....." required>
+        <textarea id="textarea"  placeholder="Write Message" name="message"></textarea>
+        <button class="submit" type="submit">send</button>
+
 
       </form>
     </div>
@@ -204,11 +207,12 @@
     <div class="container">
       <p>
         Creat By
-        <a href="facebook.com" target="-blank">EMAN ELBASHIR</a>|
+        <a href="https://emanelbashir.github.io/Portfolio" target="-blank">EMAN ELBASHIR</a>|
 
         All Right Reserrved.
       </p>
       <button>
+
         <!-- <a href="https://wa.link/epkltd" target="-blank" id="whatsapp">
           <i class="fa-brands fa-whatsapp"></i>
 
@@ -225,6 +229,8 @@
 
 
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
   <script src="Portfolio.js"></script>
 </body>
 
