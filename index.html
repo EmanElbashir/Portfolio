@@ -16,6 +16,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- emailjs -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("SwnVhnab0BMYhJ7CX");
+    })();
+</script>
 </head>
 
 <body>
@@ -193,10 +201,10 @@
     <div class="container">
       <form  id="sendform">
         <div class="alert"> Your messaage sent</div>
-        <input id="email"   type="email" name="emaile" placeholder="Your Email....." required>
-        <input id="name" type="text" name="name" placeholder="Your Name....." required>
+        <input id="email"   type="email" name="emaile" placeholder="Your Email" required>
+        <input id="name" type="text" name="name" placeholder="Your Name" required>
         <textarea id="textarea"  placeholder="Write Message" name="message"></textarea>
-        <button class="submit" type="submit">send</button>
+        <button type="button" onclick="sendmails()">send</button>
 
 
       </form>
@@ -224,13 +232,6 @@
 
   </footer>
 
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
   <script src="Portfolio.js"></script>
 </body>
 
