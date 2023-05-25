@@ -57,16 +57,28 @@ window.onscroll = function () {
 //emailjs
 
 function sendmails() {
+   
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("textarea").value;
+
+  if (name === '' || email === '' || message === '') {
+    
+    alert("Please fill in all required fields");
+    return;
+  }
+
   var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("textarea").value
+    name: name,
+    email: email,
+    message: message
   };
   
   emailjs.send("service_1vhcfdi", "template_wgrw66p", params)
     .then(function(response) {
 
-      document.querySelector(".alert").style.display= 'block';
+        document.querySelector(".alert").style.display= 'block';
+      
 
          setTimeout(function() {
       
