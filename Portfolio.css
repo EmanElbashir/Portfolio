@@ -160,7 +160,8 @@ header input:checked~.container nav {
     transition: .3s;
     padding-top: 100px;
     justify-content: center;
-    background-color: var(--border-color)
+    background-color: var(--border-color);
+    text-align: center;
 }
 
 header input:checked~label i::before {
@@ -473,6 +474,7 @@ p.p2.con {
     border-radius: 8px;
     border: 1px solid var(--scend--color);
     overflow: hidden;
+    margin-bottom: 10px;
   
 }
 
@@ -659,6 +661,8 @@ footer button {
     font-size: 30px;
     margin-left: 10px;
     opacity: 0;
+    border-radius: 50px;
+
 
 }
 
